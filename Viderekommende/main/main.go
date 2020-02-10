@@ -1,9 +1,10 @@
 package main
 
-import(
-	"os"
+import (
+	arr "10022020/test1052020/Viderekommende/getsliced"
+	get "10022020/test1052020/Viderekommende/methodmethod"
 	"fmt"
-	get "Viderekommende/methodmethod"
+	"os"
 )
 
 func main() {
@@ -15,5 +16,10 @@ func main() {
 	} else {
 		fmt.Println("Not enough args")
 	}
+
+	nums := arr.GetArrayStartingAt(5)
+	numsHalf := nums[:5]
+	fmt.Println(nums)
+	fmt.Println(numsHalf)
 
 }
