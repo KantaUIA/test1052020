@@ -60,7 +60,7 @@ func favFrukt(){
 
 }
 
-	//Oppgave 6 whileloop telling?
+//Oppgave 6 whileloop telling?
 	func whiletelling(){
 
 		i := 0
@@ -70,3 +70,15 @@ func favFrukt(){
 			fmt.Println("Teller ", i)
 		}
 	}
+
+
+//Oppgave 7 Lag en array med 50 tall og sorter disse. Hint: sorteringspakke?
+
+func radomNumgen(){
+	for a := []; i := 0; i<50; i++{
+		a[i]=i
+	}
+	
+	for (var a=[], i = 0; i<50; i++) a[i]=i;
+
+}
