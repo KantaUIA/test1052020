@@ -1,6 +1,7 @@
 package main
 
 import (
+	board "10022020/test1052020/Viderekommende/board"
 	arr "10022020/test1052020/Viderekommende/getsliced"
 	get "10022020/test1052020/Viderekommende/methodmethod"
 	"fmt"
@@ -8,7 +9,14 @@ import (
 )
 
 func main() {
+	arraydemo(5)
+	b := board.CreateBoard()
+	fmt.Println(b[0])
+	fmt.Println(b[1])
+	fmt.Println(b[2])
+}
 
+func greetings() {
 	args := os.Args
 
 	if len(args) > 1 {
@@ -16,10 +24,11 @@ func main() {
 	} else {
 		fmt.Println("Not enough args")
 	}
+}
 
-	nums := arr.GetArrayStartingAt(5)
-	numsHalf := nums[:5]
+func arraydemo(i int) {
+	nums := arr.GetArrayStartingAt(i)
+	numsHalf := nums[:len(nums)/2]
 	fmt.Println(nums)
 	fmt.Println(numsHalf)
-
 }
